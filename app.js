@@ -6,11 +6,15 @@ const app = express();
 
 const port  = process.env.port || 8000
 
-app.set("view engine", "hbs");
+// app.set("view engine", "hbs");
 
-app.get("/", (req, res) => {
-  res.render("index", { title: 'Template', message: 'Hello from Heroku' });
-});
+// app.get("/", (req, res) => {
+//   res.render("index", { title: 'Template', message: 'Hello from Heroku' });
+// });
+
+app.get("/",(req,res)=>{
+  res.send("Hello")
+})
 
 app.listen(port, () => {
   console.log("server is up and running on port"+ port);
