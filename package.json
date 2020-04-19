@@ -4,7 +4,8 @@
   "description": "",
   "main": "products.js",
   "scripts": {
-    "devserver": "nodemon helloworld.js"
+    "start" : "node app.js"
+    
   },
   "author": "",
   "license": "ISC",
