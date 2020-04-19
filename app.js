@@ -9,7 +9,7 @@ const port  = process.env.PORT || 8000
 app.set("view engine", "hbs");
 
 app.get("/", (req, res) => {
-  res.render("index", { title: 'Template', message: 'Hello from Heroku' });
+  res.render("index.hbs", { title: 'Template', message: 'Hello from Heroku' });
 });
 
 // app.get("/",(req,res)=>{
