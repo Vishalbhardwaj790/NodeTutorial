@@ -12,9 +12,9 @@ const port  = process.env.port || 8000
 //   res.render("index", { title: 'Template', message: 'Hello from Heroku' });
 // });
 
-app.get("/",(req,res)=>{
-  res.send("Hello")
-})
+// app.get("/",(req,res)=>{
+//   res.send("Hello")
+// })
 
 app.listen(port, () => {
   console.log("server is up and running on port"+ port);
