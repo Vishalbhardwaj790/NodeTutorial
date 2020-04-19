@@ -4,13 +4,13 @@ const path = require("path");
 
 const app = express();
 
-const port  = process.env.port || 8000
+const port  = process.env.PORT || 8000
 
-// app.set("view engine", "hbs");
+app.set("view engine", "hbs");
 
-// app.get("/", (req, res) => {
-//   res.render("index", { title: 'Template', message: 'Hello from Heroku' });
-// });
+app.get("/", (req, res) => {
+  res.render("index", { title: 'Template', message: 'Hello from Heroku' });
+});
 
 // app.get("/",(req,res)=>{
 //   res.send("Hello")
